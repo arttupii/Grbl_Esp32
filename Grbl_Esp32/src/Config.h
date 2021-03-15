@@ -96,23 +96,23 @@ const int MAX_N_AXIS = 6;
 //#define CONNECT_TO_SSID  "your SSID"
 //#define SSID_PASSWORD  "your SSID password"
 //CONFIGURE_EYECATCH_BEGIN (DO NOT MODIFY THIS LINE)
-#define ENABLE_BLUETOOTH  // enable bluetooth
+//#define ENABLE_BLUETOOTH  // enable bluetooth
 
-#define ENABLE_SD_CARD  // enable use of SD Card to run jobs
+//#define ENABLE_SD_CARD  // enable use of SD Card to run jobs
 
-#define ENABLE_WIFI  //enable wifi
+//#define ENABLE_WIFI  //enable wifi
 
 #if defined(ENABLE_WIFI) || defined(ENABLE_BLUETOOTH)
 #    define WIFI_OR_BLUETOOTH
 #endif
 
-#define ENABLE_HTTP                //enable HTTP and all related services
-#define ENABLE_OTA                 //enable OTA
-#define ENABLE_TELNET              //enable telnet
-#define ENABLE_TELNET_WELCOME_MSG  //display welcome string when connect to telnet
-#define ENABLE_MDNS                //enable mDNS discovery
-#define ENABLE_SSDP                //enable UPNP discovery
-#define ENABLE_NOTIFICATIONS       //enable notifications
+//#define ENABLE_HTTP                //enable HTTP and all related services
+//#define ENABLE_OTA                 //enable OTA
+//#define ENABLE_TELNET              //enable telnet
+//#define ENABLE_TELNET_WELCOME_MSG  //display welcome string when connect to telnet
+//#define ENABLE_MDNS                //enable mDNS discovery
+//#define ENABLE_SSDP                //enable UPNP discovery
+//#define ENABLE_NOTIFICATIONS       //enable notifications
 
 #define ENABLE_SERIAL2SOCKET_IN
 #define ENABLE_SERIAL2SOCKET_OUT
@@ -121,7 +121,7 @@ const int MAX_N_AXIS = 6;
 // WebUI come up automatically in the browser, instead of requiring the user
 // to browse manually to a default URL.  It works like airport and hotel
 // WiFi that takes you a special page as soon as you connect to that AP.
-#define ENABLE_CAPTIVE_PORTAL
+//#define ENABLE_CAPTIVE_PORTAL
 
 // Warning! The current authentication implementation is too weak to provide
 // security against an attacker, since passwords are stored and transmitted
