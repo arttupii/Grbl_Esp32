@@ -10,5 +10,5 @@
 
 // To build for the SourceRabbit Micro Mill 4 Axis
 // uncomment the following line
-#include "sourcerabbit_MicroMill_4Axis"
+#include "Machines/sourcerabbit_MicroMill_4Axis.h"
 
