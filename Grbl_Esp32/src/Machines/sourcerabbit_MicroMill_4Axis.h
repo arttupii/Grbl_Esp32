@@ -1,7 +1,7 @@
 #pragma once
 
 
-#define MACHINE_NAME            "SourceRabbit 4-Axis CNC Motherboard"
+#define MACHINE_NAME            "Micro Mill 4Axis"
 
 #ifdef N_AXIS
 	#undef N_AXIS
@@ -9,7 +9,7 @@
 #define N_AXIS 4
 
 
-#define DEFAULT_DIRECTION_INVERT_MASK 		4
+#define DEFAULT_DIRECTION_INVERT_MASK 	4
 #define DEFAULT_INVERT_LIMIT_PINS 		0
 #define DEFAULT_INVERT_PROBE_PIN 		0
 
@@ -17,7 +17,7 @@
 #define DEFAULT_HARD_LIMIT_ENABLE 		0
 #define DEFAULT_HOMING_ENABLE 			1
 #define DEFAULT_HOMING_DIR_MASK 		3  		// $23 move positive dir Z, negative X,Y
-#define DEFAULT_HOMING_FEED_RATE 		500.0  // $24 mm/min
+#define DEFAULT_HOMING_FEED_RATE 		500.0  	// $24 mm/min
 #define DEFAULT_HOMING_SEEK_RATE 		1500.0  // $25 mm/min
 #define DEFAULT_HOMING_PULLOFF 			2.0  	// $27 mm
 
@@ -29,19 +29,19 @@
 
 // SPEEDS AND ACCELLERATIONS
 #define DEFAULT_X_STEPS_PER_MM 			400.0
-#define DEFAULT_X_MAX_RATE 			5000.0  // mm/min
+#define DEFAULT_X_MAX_RATE 				5000.0  // mm/min
 #define DEFAULT_X_ACCELERATION 			80.0
 
 #define DEFAULT_Y_STEPS_PER_MM 			400.0
-#define DEFAULT_Y_MAX_RATE 			5000.0  // mm/min
+#define DEFAULT_Y_MAX_RATE 				5000.0  // mm/min
 #define DEFAULT_Y_ACCELERATION 			80.0
 
 #define DEFAULT_Z_STEPS_PER_MM 			400.0
-#define DEFAULT_Z_MAX_RATE 			2500.0  // mm/min
+#define DEFAULT_Z_MAX_RATE 				2500.0  // mm/min
 #define DEFAULT_Z_ACCELERATION 			60.0
 
 #define DEFAULT_A_STEPS_PER_MM 			400.0	// Steps / Degree
-#define DEFAULT_A_MAX_RATE 			3600.0  // degrees/min
+#define DEFAULT_A_MAX_RATE 				3600.0  // degrees/min
 #define DEFAULT_A_ACCELERATION 			60.0
 
 
