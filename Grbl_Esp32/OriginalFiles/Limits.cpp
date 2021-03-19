@@ -397,11 +397,10 @@ bool limitsCheckTravel(float* target) {
     auto    n_axis = number_axis->get();
     for (idx = 0; idx < n_axis; idx++) {
         float max_mpos, min_mpos;
-		
-		if ((target[idx] < limitsMinPosition(idx) || target[idx] > limitsMaxPosition(idx)) 
-			&& axis_settings[idx]->max_travel->get()>0) {
-			return true;
-		}
+
+        if (target[idx] < limitsMinPosition(idx) || target[idx] > limitsMaxPosition(idx)) {
+            return true;
+        }
     }
     return false;
 }

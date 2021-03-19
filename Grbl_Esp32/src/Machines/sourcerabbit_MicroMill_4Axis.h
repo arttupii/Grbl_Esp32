@@ -23,9 +23,10 @@
 
 
 // TRAVEL
-#define DEFAULT_X_MAX_TRAVEL 			302.0  	// $130 mm NOTE: Must be a positive value.
-#define DEFAULT_Y_MAX_TRAVEL 			202.0  	// $130 mm NOTE: Must be a positive value.
-#define DEFAULT_Z_MAX_TRAVEL 			180.0  	// $130 mm NOTE: Must be a positive value.
+#define DEFAULT_X_MAX_TRAVEL 			302.0  	// $130 mm 
+#define DEFAULT_Y_MAX_TRAVEL 			202.0  	// $131 mm
+#define DEFAULT_Z_MAX_TRAVEL 			180.0  	// $132 mm
+#define DEFAULT_A_MAX_TRAVEL 			0  		// $133 mm (NOTE: We set this to zero in order to avoid Soft Limits for this Axis)
 
 // SPEEDS AND ACCELLERATIONS
 // DRIVERS MICROSTEPPING IS SET to x16
