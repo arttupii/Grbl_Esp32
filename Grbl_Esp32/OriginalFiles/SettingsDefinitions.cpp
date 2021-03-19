@@ -301,12 +301,7 @@ void make_settings() {
     }
     for (axis = MAX_N_AXIS - 1; axis >= 0; axis--) {
         def          = &axis_defaults[axis];
-
-		///////////////////////////////////////////////////////////////////////////////////////////////
-		// The "(axis>2) ? 0 : 1.0" allows
-		// to set the maxTravel for the A,B and C axes to zero
-        auto setting = new FloatSetting(GRBL, WG, makeGrblName(axis, 130), makename(def->name, "MaxTravel"), def->max_travel, (axis>2) ? 0 : 1.0, 100000.0);
-		///////////////////////////////////////////////////////////////////////////////////////////////
+        auto setting = new FloatSetting(GRBL, WG, makeGrblName(axis, 130), makename(def->name, "MaxTravel"), def->max_travel, 1.0, 100000.0);
         setting->setAxis(axis);
         axis_settings[axis]->max_travel = setting;
     }
