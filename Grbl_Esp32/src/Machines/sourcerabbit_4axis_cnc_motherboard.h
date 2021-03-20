@@ -1,12 +1,16 @@
 #pragma once
 
 
-#define MACHINE_NAME            "SourceRabbit 4-Axis CNC Motherboard"
+#define MACHINE_NAME            "SourceRabbit 4Axis CNC Motherboard"
 
 #ifdef N_AXIS
 	#undef N_AXIS
 #endif
 #define N_AXIS 4
+
+
+#define DEFAULT_STEP_PULSE_MICROSECONDS 3
+#define DEFAULT_STEPPER_IDLE_LOCK_TIME 	255	// KEEP MOTORS ALWAYS ON
 
 
 #define DEFAULT_DIRECTION_INVERT_MASK 	4
