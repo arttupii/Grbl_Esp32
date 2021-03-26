@@ -33,21 +33,21 @@
 #define DEFAULT_A_MAX_TRAVEL 			0  		// $133 mm (NOTE: We set this to zero in order to avoid Soft Limits for this Axis)
 
 // SPEEDS AND ACCELLERATIONS
-// DRIVERS MICROSTEPPING IS SET to x16
-#define DEFAULT_X_STEPS_PER_MM 			800.0
-#define DEFAULT_X_MAX_RATE 				5000.0  // mm/min
+// DRIVERS MICROSTEPPING IS SET to x8
+#define DEFAULT_X_STEPS_PER_MM 			400.0
+#define DEFAULT_X_MAX_RATE 				4000.0  // mm/min
 #define DEFAULT_X_ACCELERATION 			80.0
 
-#define DEFAULT_Y_STEPS_PER_MM 			800.0
-#define DEFAULT_Y_MAX_RATE 				5000.0  // mm/min
+#define DEFAULT_Y_STEPS_PER_MM 			400.0
+#define DEFAULT_Y_MAX_RATE 				4000.0  // mm/min
 #define DEFAULT_Y_ACCELERATION 			80.0
 
-#define DEFAULT_Z_STEPS_PER_MM 			800.0
+#define DEFAULT_Z_STEPS_PER_MM 			400.0
 #define DEFAULT_Z_MAX_RATE 				2500.0  // mm/min
 #define DEFAULT_Z_ACCELERATION 			60.0
 
-#define DEFAULT_A_STEPS_PER_MM 			800.0	// Steps / Degree
-#define DEFAULT_A_MAX_RATE 				3600.0  // degrees/min
+#define DEFAULT_A_STEPS_PER_MM 			26.666	// Steps / Degree
+#define DEFAULT_A_MAX_RATE 				7200.0  // degrees/min
 #define DEFAULT_A_ACCELERATION 			60.0
 
 
