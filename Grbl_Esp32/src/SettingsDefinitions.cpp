@@ -301,12 +301,7 @@ void make_settings() {
     }
     for (axis = MAX_N_AXIS - 1; axis >= 0; axis--) {
         def          = &axis_defaults[axis];
-
-		///////////////////////////////////////////////////////////////////////////////////////////////
-		// The "(axis>2) ? 0 : 1.0" allows
-		// to set the maxTravel for the A,B and C axes to zero
-        auto setting = new FloatSetting(GRBL, WG, makeGrblName(axis, 130), makename(def->name, "MaxTravel"), def->max_travel, (axis>2) ? 0 : 1.0, 100000.0);
-		///////////////////////////////////////////////////////////////////////////////////////////////
+        auto setting = new FloatSetting(GRBL, WG, makeGrblName(axis, 130), makename(def->name, "MaxTravel"), def->max_travel, 0, 100000.0);
         setting->setAxis(axis);
         axis_settings[axis]->max_travel = setting;
     }
@@ -365,8 +360,8 @@ void make_settings() {
     spindle_enable_invert = new FlagSetting(GRBL, WG, NULL, "Spindle/Enable/Invert", DEFAULT_INVERT_SPINDLE_ENABLE_PIN, checkSpindleChange);
 
     // GRBL Non-numbered settings
-    startup_line_0 = new StringSetting(GRBL, WG, "N0", "GCode/Line0", "", checkStartupLine);
-    startup_line_1 = new StringSetting(GRBL, WG, "N1", "GCode/Line1", "", checkStartupLine);
+    startup_line_0 = new StringSetting(EXTENDED, WG, "N0", "GCode/Line0", "", checkStartupLine);
+    startup_line_1 = new StringSetting(EXTENDED, WG, "N1", "GCode/Line1", "", checkStartupLine);
 
     // GRBL Numbered Settings
     laser_mode       = new FlagSetting(GRBL, WG, "32", "GCode/LaserMode", DEFAULT_LASER_MODE);
@@ -405,9 +400,6 @@ void make_settings() {
     step_invert_mask             = new AxisMaskSetting(GRBL, WG, "2", "Stepper/StepInvert", DEFAULT_STEPPING_INVERT_MASK, postMotorSetting);
     stepper_idle_lock_time       = new IntSetting(GRBL, WG, "1", "Stepper/IdleTime", DEFAULT_STEPPER_IDLE_LOCK_TIME, 0, 255);
     pulse_microseconds           = new IntSetting(GRBL, WG, "0", "Stepper/Pulse", DEFAULT_STEP_PULSE_MICROSECONDS, 3, 1000);
-    direction_delay_microseconds = new IntSetting(EXTENDED, WG, NULL, "Stepper/Direction/Delay", 0, 0, 1000);
-    enable_delay_microseconds    = new IntSetting(EXTENDED, WG, NULL, "Stepper/Enable/Delay", 0, 0, 1000);  // microseconds
-
     direction_delay_microseconds = new IntSetting(EXTENDED, WG, NULL, "Stepper/Direction/Delay", STEP_PULSE_DELAY, 0, 1000);
     enable_delay_microseconds = new IntSetting(EXTENDED, WG, NULL, "Stepper/Enable/Delay", DEFAULT_STEP_ENABLE_DELAY, 0, 1000);  // microseconds
 

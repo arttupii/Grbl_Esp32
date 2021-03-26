@@ -9,6 +9,9 @@
 #define N_AXIS 4
 
 
+#define DEFAULT_JUNCTION_DEVIATION 0.025  	// $11 mm
+#define DEFAULT_ARC_TOLERANCE 0.005  		// $12 mm
+
 #define DEFAULT_STEP_PULSE_MICROSECONDS 3
 #define DEFAULT_STEPPER_IDLE_LOCK_TIME 	255	// KEEP MOTORS ALWAYS ON
 
@@ -23,7 +26,7 @@
 #define DEFAULT_HOMING_DIR_MASK 		3  		// $23 move positive dir Z, negative X,Y
 #define DEFAULT_HOMING_FEED_RATE 		500.0  	// $24 mm/min
 #define DEFAULT_HOMING_SEEK_RATE 		1500.0  // $25 mm/min
-#define DEFAULT_HOMING_PULLOFF 			2.0  	// $27 mm
+#define DEFAULT_HOMING_PULLOFF 			2.0  	// $27 
 
 
 // TRAVEL

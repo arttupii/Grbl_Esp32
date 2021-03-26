@@ -111,7 +111,7 @@
 #endif
 
 #ifndef DEFAULT_HOMING_FEED_RATE
-#    define DEFAULT_HOMING_FEED_RATE 1000.0  // $24 mm/min
+#    define DEFAULT_HOMING_FEED_RATE 200.0  // $24 mm/min
 #endif
 
 #ifndef DEFAULT_HOMING_SEEK_RATE
@@ -123,7 +123,7 @@
 #endif
 
 #ifndef DEFAULT_HOMING_PULLOFF
-#    define DEFAULT_HOMING_PULLOFF 2.0  // $27 mm
+#    define DEFAULT_HOMING_PULLOFF 1.0  // $27 mm
 #endif
 
 #ifndef DEFAULT_HOMING_SQUARED_AXES
@@ -259,16 +259,16 @@
 // =========== 	AXIS RESOLUTION ======
 
 #ifndef DEFAULT_X_STEPS_PER_MM
-#    define DEFAULT_X_STEPS_PER_MM 400.0
+#    define DEFAULT_X_STEPS_PER_MM 100.0
 #endif
 #ifndef DEFAULT_Y_STEPS_PER_MM
-#    define DEFAULT_Y_STEPS_PER_MM 400.0
+#    define DEFAULT_Y_STEPS_PER_MM 100.0
 #endif
 #ifndef DEFAULT_Z_STEPS_PER_MM
-#    define DEFAULT_Z_STEPS_PER_MM 400.0
+#    define DEFAULT_Z_STEPS_PER_MM 100.0
 #endif
 #ifndef DEFAULT_A_STEPS_PER_MM
-#    define DEFAULT_A_STEPS_PER_MM 400.0
+#    define DEFAULT_A_STEPS_PER_MM 100.0
 #endif
 #ifndef DEFAULT_B_STEPS_PER_MM
 #    define DEFAULT_B_STEPS_PER_MM 100.0
@@ -280,13 +280,13 @@
 // ============ AXIS MAX SPPED =========
 
 #ifndef DEFAULT_X_MAX_RATE
-#    define DEFAULT_X_MAX_RATE 4000.0  // mm/min
+#    define DEFAULT_X_MAX_RATE 1000.0  // mm/min
 #endif
 #ifndef DEFAULT_Y_MAX_RATE
-#    define DEFAULT_Y_MAX_RATE 4000.0  // mm/min
+#    define DEFAULT_Y_MAX_RATE 1000.0  // mm/min
 #endif
 #ifndef DEFAULT_Z_MAX_RATE
-#    define DEFAULT_Z_MAX_RATE 3000.0  // mm/min
+#    define DEFAULT_Z_MAX_RATE 1000.0  // mm/min
 #endif
 #ifndef DEFAULT_A_MAX_RATE
 #    define DEFAULT_A_MAX_RATE 1000.0  // mm/min
@@ -302,16 +302,16 @@
 #define SEC_PER_MIN_SQ (60.0 * 60.0)  // Seconds Per Minute Squared, for acceleration conversion
 // Default accelerations are expressed in mm/sec^2
 #ifndef DEFAULT_X_ACCELERATION
-#    define DEFAULT_X_ACCELERATION 60.0
+#    define DEFAULT_X_ACCELERATION 200.0
 #endif
 #ifndef DEFAULT_Y_ACCELERATION
-#    define DEFAULT_Y_ACCELERATION 60.0
+#    define DEFAULT_Y_ACCELERATION 200.0
 #endif
 #ifndef DEFAULT_Z_ACCELERATION
-#    define DEFAULT_Z_ACCELERATION 60.0
+#    define DEFAULT_Z_ACCELERATION 200.0
 #endif
 #ifndef DEFAULT_A_ACCELERATION
-#    define DEFAULT_A_ACCELERATION 40.0
+#    define DEFAULT_A_ACCELERATION 200.0
 #endif
 #ifndef DEFAULT_B_ACCELERATION
 #    define DEFAULT_B_ACCELERATION 200.0
@@ -326,10 +326,10 @@
 #    define DEFAULT_X_MAX_TRAVEL 300.0  // $130 mm NOTE: Must be a positive value.
 #endif
 #ifndef DEFAULT_Y_MAX_TRAVEL
-#    define DEFAULT_Y_MAX_TRAVEL 200.0  // mm NOTE: Must be a positive value.
+#    define DEFAULT_Y_MAX_TRAVEL 300.0  // mm NOTE: Must be a positive value.
 #endif
 #ifndef DEFAULT_Z_MAX_TRAVEL
-#    define DEFAULT_Z_MAX_TRAVEL 100.0  // mm NOTE: Must be a positive value.
+#    define DEFAULT_Z_MAX_TRAVEL 300.0  // mm NOTE: Must be a positive value.
 #endif
 #ifndef DEFAULT_A_MAX_TRAVEL
 #    define DEFAULT_A_MAX_TRAVEL 300.0  // mm NOTE: Must be a positive value.
