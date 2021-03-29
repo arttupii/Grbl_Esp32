@@ -468,7 +468,7 @@ const int DWELL_TIME_STEP = 50;  // Integer (1-255) (milliseconds)
 // NOTE: 80 characters is not a problem except for extreme cases, but the line buffer size
 // can be too small and GCode blocks can get truncated. Officially, the GCode standards
 // support up to 256 characters.
-// #define LINE_BUFFER_SIZE 80  // Uncomment to override default in protocol.h
+#define LINE_BUFFER_SIZE 80  // Uncomment to override default in protocol.h
 
 // Serial send and receive buffer size. The receive buffer is often used as another streaming
 // buffer to store incoming blocks to be processed by Grbl when its ready. Most streaming
