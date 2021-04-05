@@ -39,16 +39,16 @@
 // SPEEDS AND ACCELLERATIONS
 // DRIVERS MICROSTEPPING IS SET to x8
 #define DEFAULT_X_STEPS_PER_MM 				400.0
-#define DEFAULT_X_MAX_RATE 					4000.0  // mm/min
-#define DEFAULT_X_ACCELERATION 				80.0
+#define DEFAULT_X_MAX_RATE 					4200.0  // mm/min
+#define DEFAULT_X_ACCELERATION 				140.0
 
 #define DEFAULT_Y_STEPS_PER_MM 				400.0
-#define DEFAULT_Y_MAX_RATE 					4000.0  // mm/min
-#define DEFAULT_Y_ACCELERATION 				80.0
+#define DEFAULT_Y_MAX_RATE 					4200.0  // mm/min
+#define DEFAULT_Y_ACCELERATION 				140.0
 
 #define DEFAULT_Z_STEPS_PER_MM 				400.0
-#define DEFAULT_Z_MAX_RATE 					2500.0  // mm/min
-#define DEFAULT_Z_ACCELERATION 				60.0
+#define DEFAULT_Z_MAX_RATE 					2800.0  // mm/min
+#define DEFAULT_Z_ACCELERATION 				100.0
 
 #define DEFAULT_A_STEPS_PER_MM 				26.666	// Steps / Degree
 #define DEFAULT_A_MAX_RATE 					28000.0  // degrees/min
