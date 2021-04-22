@@ -51,7 +51,7 @@
 #define DEFAULT_Z_ACCELERATION 				100.0
 
 #define DEFAULT_A_STEPS_PER_MM 				26.666	// Steps / Degree
-#define DEFAULT_A_MAX_RATE 					28000.0  // degrees/min
+#define DEFAULT_A_MAX_RATE 					72000.0  // degrees/min
 #define DEFAULT_A_ACCELERATION 				720.0
 
 

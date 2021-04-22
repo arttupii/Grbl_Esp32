@@ -106,13 +106,13 @@ const int MAX_N_AXIS = 6;
 #    define WIFI_OR_BLUETOOTH
 #endif
 
-/*#define ENABLE_HTTP                //enable HTTP and all related services
+#define ENABLE_HTTP                //enable HTTP and all related services
 #define ENABLE_OTA                 //enable OTA
 #define ENABLE_TELNET              //enable telnet
 #define ENABLE_TELNET_WELCOME_MSG  //display welcome string when connect to telnet
 #define ENABLE_MDNS                //enable mDNS discovery
 #define ENABLE_SSDP                //enable UPNP discovery
-#define ENABLE_NOTIFICATIONS       //enable notifications*/
+#define ENABLE_NOTIFICATIONS       //enable notifications
 
 #define ENABLE_SERIAL2SOCKET_IN
 #define ENABLE_SERIAL2SOCKET_OUT
@@ -121,7 +121,7 @@ const int MAX_N_AXIS = 6;
 // WebUI come up automatically in the browser, instead of requiring the user
 // to browse manually to a default URL.  It works like airport and hotel
 // WiFi that takes you a special page as soon as you connect to that AP.
-//#define ENABLE_CAPTIVE_PORTAL
+#define ENABLE_CAPTIVE_PORTAL
 
 // Warning! The current authentication implementation is too weak to provide
 // security against an attacker, since passwords are stored and transmitted
@@ -468,7 +468,7 @@ const int DWELL_TIME_STEP = 50;  // Integer (1-255) (milliseconds)
 // NOTE: 80 characters is not a problem except for extreme cases, but the line buffer size
 // can be too small and GCode blocks can get truncated. Officially, the GCode standards
 // support up to 256 characters.
-//#define LINE_BUFFER_SIZE 80  // Uncomment to override default in protocol.h
+// #define LINE_BUFFER_SIZE 80  // Uncomment to override default in protocol.h
 
 // Serial send and receive buffer size. The receive buffer is often used as another streaming
 // buffer to store incoming blocks to be processed by Grbl when its ready. Most streaming
